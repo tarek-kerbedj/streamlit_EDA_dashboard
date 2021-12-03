@@ -23,12 +23,18 @@ dfcolumnnames = st.sidebar.checkbox("Display column names")
 st.sidebar.markdown("""-------""")
 #second section called quick visualization
 st.sidebar.header("quick visualization ")
-#prompt the user to choose a a csv file
+#prompt the user to choose a  file
 st.subheader("Choose a custom dataset")
-custom_dataset = st.file_uploader("", type=['csv'])
+custom_dataset = st.file_uploader("", type=['csv','xlsx','xls'])
 if custom_dataset:
-    df = pd.read_csv(custom_dataset)
-
+    try:
+        df = pd.read_csv(custom_dataset)
+    except:
+        df= pd.read_excel(custom_dataset,
+        header=0,
+        index_col=False,
+        keep_default_na=True
+        )
 if dfhead:
     st.write(df.head())
 
