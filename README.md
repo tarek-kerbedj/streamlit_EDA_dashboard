@@ -21,11 +21,16 @@ pip install plotly
 ```
 pip install seaborn
 ```
+### optional in case you're gonna upload XLS,XLXS file formats
+```
+pip install xlrd
+pip install openpyxl
+```
 
 ## Instructions
 - run the script through the command line 
 ```
 streamlit run main.py
 ```
-- select a dataset ( this dashboard only supports CSV and XLSX)
-- have fun
+- select a dataset ( this dashboard only supports CSV , XLSX and XLS)
+- have fun testing it 
