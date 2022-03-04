@@ -1,4 +1,3 @@
-# streamlit projects
 # Dashboard for EDA and classification
 ## Requirments
 - installing streamlit
