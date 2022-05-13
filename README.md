@@ -1,4 +1,6 @@
 # Dashboard for EDA and classification
+## an experimental EDA dashboard in streamlit to make simple out of the box analysis/classification on your tabular data 
+
 ## Requirments
 - installing streamlit
 ```
